@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Lev Tregubov](https://up.htmlacademy.ru/adaptive/23/user/1835941).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Максименко](https://htmlacademy.ru/profile/id248863).
 
 ---
 
