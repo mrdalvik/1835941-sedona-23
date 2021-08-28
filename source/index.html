@@ -13,32 +13,32 @@
       </a>
 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle main-nav__toggle--close" id="main-nav-toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
 
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
+          <ul class="main-nav__list" id="main-nav-menu">
             <li class="main-nav__item main-nav__item--active">
-              <a>
+              <a class="main-nav__link">
                 Главная
               </a>
             </li>
 
             <li class="main-nav__item">
-              <a href="catalog.html">
+              <a class="main-nav__link" href="catalog.html">
                 Фото и видео
               </a>
             </li>
 
             <li class="main-nav__item">
-              <a href="form.html">
+              <a class="main-nav__link" href="form.html">
                 Форма отзыва
               </a>
             </li>
 
             <li class="main-nav__item">
-              <a href="#">
+              <a class="main-nav__link" href="#">
                 HTML Academy
               </a>
             </li>
@@ -197,5 +197,7 @@
         </div>
       </div>
     </footer>
+
+    <script type="module" src="./js/app.js"></script>
   </body>
 </html>
