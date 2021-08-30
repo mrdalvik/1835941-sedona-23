@@ -1,0 +1,48 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid @color-disable;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+
+  &__photo {
+    width: 280px;
+    height: 280px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: @font-size-mobile-regular;
+    line-height: @line-height;
+    margin-top: 11px;
+    margin-bottom: 5px;
+  }
+
+  &__author {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__icon-like {
+    margin-right: 14px;
+  }
+
+  &__counter {
+    font-weight: 700;
+    font-size: @font-size-mobile-regular;
+    line-height: @line-height;
+    margin: 0;
+  }
+}
