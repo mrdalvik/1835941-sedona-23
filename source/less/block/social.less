@@ -3,55 +3,55 @@
   align-items: center;
   width: 100%;
   margin-bottom: 40px;
+}
 
-  &__list {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-left: 0;
-    padding-left: 0;
+.social__list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.social__item {
+  list-style-type: none;
+  margin-left: 6px;
+}
+
+.social__link {
+  .base-link;
+  display: block;
+  width: 48px;
+  height: 48px;
+  color: @color-white;
+  background-color: @color-primary;
+
+  &--twitter {
+    background-image: url("@{img-path}icon-twitter.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 17.5px 14.5px;
   }
 
-  &__item {
-    list-style-type: none;
-    margin-left: 6px;
+  &--facebook {
+    background-image: url("@{img-path}icon-facebook.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8.7px 18.9px;
   }
 
-  &__link {
-    .base-link;
-    display: block;
-    width: 48px;
-    height: 48px;
-    color: @color-white;
-    background-color: @color-primary;
+  &--youtube {
+    background-image: url("@{img-path}icon-youtube.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 19.9px 14px;
+  }
 
-    &--twitter {
-      background-image: url("@{img-path}icon-twitter.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 17.5px 14.5px;
-    }
+  &:hover {
+    background-color: @color-primary-hover;
+  }
 
-    &--facebook {
-      background-image: url("@{img-path}icon-facebook.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 8.7px 18.9px;
-    }
-
-    &--youtube {
-      background-image: url("@{img-path}icon-youtube.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 19.9px 14px;
-    }
-
-    &:hover {
-      background-color: @color-primary-hover;
-    }
-
-    &:active {
-      background-color: @color-primary-active;
-    }
+  &:active {
+    background-color: @color-primary-active;
   }
 }
