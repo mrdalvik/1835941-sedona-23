@@ -71,10 +71,6 @@
   mix-blend-mode: normal;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
-  :visited {
-    color: @color-white;
-  }
-
   :hover {
     background-color: @color-primary-hover;
   }
@@ -88,4 +84,9 @@
 .main-nav__link {
   .base-link();
   display: block;
+  color: @color-white;
+
+  :visited {
+    color: @color-white;
+  }
 }
