@@ -4,40 +4,41 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона. Фото и видео</title>
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img src="img/logotype-mobile.svg" width="102" height="84" alt="City of Sedona">
       </a>
 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle main-nav__toggle--close" id="main-nav-toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
 
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
+          <ul class="main-nav__list" id="main-nav-menu">
             <li class="main-nav__item main-nav__item--active">
-              <a href="index.html">
+              <a class="main-nav__link" href="index.html">
                 Главная
               </a>
             </li>
 
             <li class="main-nav__item">
-              <a>
+              <a class="main-nav__link">
                 Фото и видео
               </a>
             </li>
 
             <li class="main-nav__item">
-              <a href="form.html">
+              <a class="main-nav__link" href="form.html">
                 Форма отзыва
               </a>
             </li>
 
             <li class="main-nav__item">
-              <a href="#">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive" target="blank">
                 HTML Academy
               </a>
             </li>
@@ -53,14 +54,14 @@
         <h2 class="visually-hidden">SEDONA</h2>
         <div class="intro__wrapper intro__wrapper--small">
           <img class="intro__tagline intro__tagline--small" src="img/text-photo-video.svg">
-
-          <section class="advantage">
-            <div class="advantage__wrapper">
-              <h2 class="advantage__title">Фото и видео</h2>
-              <p class="advantage__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-            </div>
-          </section>
         </div>
+
+        <section class="advantage">
+          <div class="advantage__wrapper">
+            <h2 class="advantage__title">Фото и видео</h2>
+            <p class="advantage__text">Не можете решиться на путешествие <br class="advantage__br">из-за курса? Фотографии помогут вам <br class="advantage__br">забыть о политике и экономике.</p>
+          </div>
+        </section>
       </section>
 
       <section class="posts">
@@ -136,7 +137,7 @@
       <section class="advantage">
         <div class="advantage__wrapper">
           <h2 class="advantage__title">Все ещё сомневаетесь?</h2>
-          <p class="advantage__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <p class="advantage__text">Смотрите видеопрезентацию и <br class="advantage__text">скорее за билетами, пока они не <br class="advantage__text">подорожали в очередной раз!</p>
         </div>
       </section>
 
@@ -147,10 +148,10 @@
           <div class="player__controls-wrapper">
             <div class="player__timeline">
               <div class="player__line">
-                <button class="player__dot">
-                  <span class="visually-hidden">Перемотка</span>
-                </button>
               </div>
+              <button class="player__dot">
+                <span class="visually-hidden">Перемотка</span>
+              </button>
             </div>
 
             <div class="player__buttons">
@@ -180,13 +181,13 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" target="black"></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="black"></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS" target="black"></a>
             </li>
           </ul>
         </div>
@@ -199,5 +200,7 @@
         </div>
       </div>
     </footer>
+
+    <script type="module" src="./js/app.js"></script>
   </body>
 </html>

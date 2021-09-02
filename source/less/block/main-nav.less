@@ -1,0 +1,92 @@
+.main-nav {
+  color: @color-white;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55px;
+  height: 55px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 100;
+
+  &--close {
+    background: url("@{img-path}/icon-menu.svg");
+    background-size: 22.9px 22px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--open {
+    background: url("@{img-path}/icon-cross.svg");
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+.main-nav__wrapper {
+  height: 56px;
+}
+
+.main-nav__list {
+  position: absolute;
+  display: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: @color-primary;
+
+  :first-child {
+    margin: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    bottom: 0;
+    width: 100%;
+    height: 7px;
+    mix-blend-mode: normal;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.07) 100%);
+  }
+}
+
+.main-nav__item {
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  background-color: @color-primary;
+  color: @color-white;
+  font-size: @font-size-mobile-big;
+  font-weight: 700;
+  text-align: center;
+  user-select: none;
+  margin-top: 1px;
+  mix-blend-mode: normal;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+  :hover {
+    background-color: @color-primary-hover;
+  }
+
+  :active {
+    background-color: @color-primary-active;
+    //opacity: 30%;
+  }
+}
+
+.main-nav__link {
+  .base-link();
+  display: block;
+  color: @color-white;
+
+  :visited {
+    color: @color-white;
+  }
+}
