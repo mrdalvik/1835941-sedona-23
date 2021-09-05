@@ -12,6 +12,10 @@
 
 .advantage--secondary {
   background-color: @color-secondary;
+
+  @media (min-width: @tablet-width) {
+    width: 33%;
+  }
 }
 
 .advantage__wrapper {
@@ -52,6 +56,14 @@
 
   &--main {
     line-height: 26px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: @font-size-tablet-big;
+
+    &--large {
+      font-size: @font-size-large;
+    }
   }
 }
 
