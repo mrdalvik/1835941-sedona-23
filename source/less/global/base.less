@@ -19,3 +19,29 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.br {
+  display: none;
+
+  &-mobile {
+    @media (max-width: @mobile-width-only) {
+      display: inline-block;
+    }
+  }
+
+  &-tablet {
+    @media (min-width: @tablet-width) {
+      display: inline-block;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+
+  &-desktop {
+    @media (min-width: @desktop-width) {
+      display: inline-block;
+    }
+  }
+}
