@@ -3,6 +3,11 @@
   align-items: center;
   width: 100%;
   margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    width: auto;
+  }
 }
 
 .social__list {
@@ -16,6 +21,10 @@
 .social__item {
   list-style-type: none;
   margin-left: 6px;
+
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
 .social__link {
