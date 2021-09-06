@@ -3,4 +3,28 @@
   position: absolute;
   top: 0;
   left: calc(50% - 51px);
+
+  @media (min-width: @tablet-width) {
+    z-index: 100;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: calc(50% - 93px);
+  }
+}
+
+.page-header__image {
+  width: 102px;
+  height: 84px;
+  background-image: url("@{img-path}/logotype-mobile.svg");
+
+  @media (min-width: @tablet-width) {
+    background-image: url("@{img-path}/logotype-tablet.svg");
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 187px;
+    height: 97px;
+    background-image: url("@{img-path}/logotype-desktop.svg");
+  }
 }

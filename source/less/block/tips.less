@@ -6,12 +6,32 @@
   padding-top: 35px;
   padding-bottom: 35px;
   padding-left: 0;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .tips__icon {
   margin-top: 14px;
   margin-right: 13px;
   width: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-right: 0;
+    width: 75px;
+    height: 75px;
+  }
+}
+
+.tips__description {
+  @media (min-width: @tablet-width) {
+    height: 113px;
+  }
 }
 
 .tips__item {
@@ -19,13 +39,40 @@
   align-items: flex-start;
   margin-left: 0;
   width: 290px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+
+    &--house {
+      order: 1;
+    }
+
+    &--gift {
+      order: 3;
+    }
+
+    &--burger {
+      order: 2;
+    }
+  }
 }
 
 .tips__title {
   font-weight: 700;
   font-size: 18px;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+    font-size: @font-size-tablet-big;
+  }
 }
 
 .tips__text {
   line-height: 21px;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+  }
 }

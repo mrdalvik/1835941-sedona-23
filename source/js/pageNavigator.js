@@ -42,7 +42,7 @@ class PageNavigator
     this.toggle.classList.remove('main-nav__toggle--close');
     this.toggle.classList.add('main-nav__toggle--open');
 
-    this.menu.style.display = 'block';
+    this.menu.classList.remove('main-nav__list--hidden');
   }
 
   close()
@@ -50,7 +50,7 @@ class PageNavigator
     this.toggle.classList.remove('main-nav__toggle--open');
     this.toggle.classList.add('main-nav__toggle--close');
 
-    this.menu.style.display = 'none';
+    this.menu.classList.add('main-nav__list--hidden');
   }
 }
 
