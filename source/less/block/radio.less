@@ -4,8 +4,45 @@
   line-height: @line-height;
   text-align: center;
   text-transform: initial;
+  padding-left: 23px;
+
+  &::before {
+    content: "";
+    position: relative;
+    display: block;
+    float: left;
+    width: 18px;
+    height: 18px;
+    top: -10px;
+    background-color: @color-secondary-input-background;
+    border: 15px solid @color-secondary-input-background;
+    border-radius: 50%;
+  }
 }
 
 .radio__item {
-  height: 48px;
+  height: 26px;
+  margin-top: 52px;
+
+  &:first-child {
+    margin-top: 65px;
+  }
+}
+
+.radio__input {
+  display: none;
+
+  &:checked + .radio__title::before {
+    background-color: #333;
+  }
+
+  &:checked + .radio__title:hover::before {
+    background-color: #333;
+    border-color: @color-disable;
+  }
+
+  &:checked + .radio__title:active::before {
+    background-color: rgba(51, 51, 51, 0.3);
+    border-color: #D5D5D5;
+  }
 }
