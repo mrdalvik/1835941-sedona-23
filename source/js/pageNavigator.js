@@ -13,6 +13,8 @@ class PageNavigator
       throw Error("Navigation: Can't find toggle node");
     }
 
+    this.toggle.classList.remove('main-nav__toggle--nojs');
+
     this.menu = document.getElementById('main-nav-menu');
     if (!this.menu instanceof HTMLElement)
     {
