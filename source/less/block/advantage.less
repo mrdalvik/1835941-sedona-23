@@ -12,6 +12,16 @@
 
 .advantage--secondary {
   background-color: @color-secondary;
+  width: 300px;
+  border-bottom: 1px solid @color-secondary-border;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+  }
 
   @media (min-width: @tablet-width) {
     width: 33%;
@@ -31,11 +41,6 @@
   &--secondary {
     padding-top: 24px;
     padding-bottom: 24px;
-    border-bottom: 1px solid @color-secondary-border;
-
-    @media (min-width: @tablet-width) {
-      border-bottom: none;
-    }
   }
 }
 

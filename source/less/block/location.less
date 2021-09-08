@@ -4,18 +4,11 @@
   align-items: center;
 }
 
-.location__image {
+.location__map {
   width: 320px;
   height: 350px;
-  background-image: url("@{img-path}/map-mobile.jpg");
 
   @media (min-width: @tablet-width) {
-    width: 768px;
-    background-image: url("@{img-path}/map-tablet.jpg");
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1200px;
-    background-image: url("@{img-path}/map-desktop.jpg");
+    width: 100%;
   }
 }

@@ -5,6 +5,16 @@
   align-items: center;
   background-color: @color-primary;
 
+  &--highlight {
+    @media (max-width: @mobile-width-only) {
+      padding-top: 34px;
+      background-image: url("@{img-path}/advantage-triangle.svg");
+      background-repeat: no-repeat;
+      background-position: 50% top;
+      background-size: 768px 34px;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;

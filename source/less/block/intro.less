@@ -2,11 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("@{img-path}/back-mobile.jpg");
+  background-image: url("@{img-path}/intro-triangle.svg"), url("@{img-path}/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top;
   width: 100%;
   height: 389px;
+  background-position-y: bottom;
 
   &--small {
     height: 158px;
@@ -15,7 +16,7 @@
   @media (min-width: @tablet-width) {
     width: 100%;
     height: 518px;
-    background-image: url("@{img-path}/back-desktop.jpg");
+    background-image: url("@{img-path}/intro-triangle.svg"), url("@{img-path}/back-desktop.jpg");
   }
 }
 
