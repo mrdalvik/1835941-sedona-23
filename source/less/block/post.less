@@ -113,6 +113,13 @@
 
 .post__icon-like {
   margin-right: 14px;
+  width: 23px;
+  height: 21px;
+  background-image: url("@{img-path}/like-icon.svg");
+
+  @media (min-width: @desktop-width) {
+    background-image: url("@{img-path}/like-icon-white.svg");
+  }
 }
 
 .post__counter {
