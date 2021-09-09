@@ -51,6 +51,15 @@
 
   &--condensed {
     padding-bottom: 20px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 65px;
+      padding-bottom: 65px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 67px;
+    }
   }
 
   &--main {
@@ -58,6 +67,18 @@
 
     @media (min-width: @desktop-width) {
       padding-top: 43px;
+    }
+  }
+
+  &--large {
+    @media (min-width: @tablet-width) {
+      padding-top: 59px;
+      padding-bottom: 68px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 63px;
+      padding-bottom: 66px;
     }
   }
 }
