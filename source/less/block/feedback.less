@@ -22,18 +22,8 @@
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
-
-    &--left {
-      text-align: left;
-    }
-
-    &--left-to-center {
-      text-align: left;
-    }
-  }
-
-  @media (min-width: @tablet-width) {
-    font-size: 21px;
+    width: 409px;
+    background-color: @color-white;
 
     &--left {
       text-align: left;
@@ -42,6 +32,28 @@
     &--left-to-center {
       text-align: left;
       margin-left: 70px;
+    }
+  }
+}
+
+.feedback__field-wrapper {
+  @media (min-width: @tablet-width) {
+    &--border {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      z-index: 10;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 30%;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #dbdbdb;
+        z-index: -1;
+      }
     }
   }
 }
@@ -101,6 +113,7 @@
       order: 4;
       padding: 0;
       margin-top: 52px;
+      width: 100%;
     }
 
     &:nth-child(5) {
