@@ -1,14 +1,12 @@
 .popup {
   position: relative;
   z-index: 1000;
-  padding-bottom: 35px;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 49px;
     width: 400px;
     margin-left: auto;
     margin-right: auto;
@@ -21,16 +19,36 @@
   }
 }
 
+.popup__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-left: 41px;
+  padding-right: 42px;
+}
+
+.popup__title {
+  margin: 0;
+  padding-bottom: 26px;
+  text-align: center;
+}
+
+.popup__text {
+  margin: 0;
+  text-align: center;
+}
+
 .popup__buttons {
   display: flex;
-
-  @media (min-width: @tablet-width) {
-    width: 273px;
-  }
+  padding-top: 22px;
+  padding-bottom: 35px;
+  width: 100%;
 
   &--large {
-    @media (min-width: @tablet-width) {
-      width: 458px;
-    }
+    margin-top: 29px;
+    padding-top: 7px;
+    padding-bottom: 20px;
+    background-color: @color-secondary-input-background;
   }
 }

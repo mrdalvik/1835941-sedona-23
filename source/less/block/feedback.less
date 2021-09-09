@@ -43,7 +43,6 @@
 .feedback__field {
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 20px;
   padding-bottom: 25px;
   border-top: 1px solid @color-disable;
 
@@ -51,9 +50,12 @@
     border-top: none;
   }
 
+  @media (max-width: @mobile-width-only) {
+    padding-top: 20px;
+  }
+
   @media (min-width: @tablet-width) {
     border-top: none;
-    margin-top: 70px;
 
     &:nth-child(1) {
       order: 2;
