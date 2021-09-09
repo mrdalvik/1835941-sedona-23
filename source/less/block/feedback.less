@@ -31,6 +31,12 @@
 
     &--left-to-center {
       text-align: left;
+      background-color: transparent;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--left-to-center {
       margin-left: 70px;
     }
   }
@@ -92,21 +98,34 @@
 
     &:nth-child(1) {
       order: 2;
-      width: 50%;
+      width: 35%;
       padding: 0;
+      position: absolute;
+      right: 60px;
     }
 
     &:nth-child(2) {
       order: 3;
       width: 100%;
       padding: 0;
-      margin-top: 73px;
+      margin-top: 354px;
     }
 
     &:nth-child(3) {
       order: 1;
-      width: 50%;
+      width: 35%;
       padding: 0;
+      position: absolute;
+      left: 60px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 120%;
+        width: 1px;
+        height: 281px;
+        background-color: #dbdbdb;
+      }
     }
 
     &:nth-child(4) {
@@ -149,11 +168,23 @@
     &:nth-child(1) {
       width: 40%;
       padding-left: 90px;
+      position: inherit;
+      left: 0;
+    }
+
+    &:nth-child(2) {
+      margin-top: 73px;
     }
 
     &:nth-child(3) {
       width: 40%;
       padding-right: 90px;
+      position: relative;
+      left: 0;
+
+      &::before {
+        left: 100%;
+      }
     }
 
     &:nth-child(4) {
