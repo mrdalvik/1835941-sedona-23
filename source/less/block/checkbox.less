@@ -23,10 +23,26 @@
   line-height: @line-height;
   text-align: center;
   text-transform: initial;
+  padding-left: 29px;
+
+  &::before {
+    content: "";
+    position: relative;
+    display: block;
+    float: left;
+    width: 46px;
+    height: 46px;
+    top: -10px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+  }
 }
 
 .checkbox__item {
   height: 48px;
+  margin-top: 34px;
+  user-select: none;
 
   @media (min-width: @tablet-width) {
     width: 50%;
@@ -35,5 +51,22 @@
 
   @media (min-width: @desktop-width) {
     width: 25%;
+  }
+}
+
+.checkbox__input {
+  display: none;
+
+  &:checked + .checkbox__title::before {
+    background: @color-secondary-input-background url("@{img-path}/tick.svg") no-repeat 50% 50%;
+  }
+
+  &:checked + .checkbox__title:hover::before {
+    background-color: @color-disable;
+  }
+
+  &:checked + .checkbox__title:active::before {
+    background-color: @color-disable;
+    opacity: 0.45;
   }
 }

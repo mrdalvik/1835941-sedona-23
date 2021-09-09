@@ -1,11 +1,60 @@
+.radio {
+  white-space: nowrap;
+}
+
 .radio__title {
   font-weight: 700;
   font-size: @font-size-mobile-big;
   line-height: @line-height;
   text-align: center;
   text-transform: initial;
+  padding-left: 23px;
+
+  &::before {
+    content: "";
+    position: relative;
+    display: block;
+    float: left;
+    width: 18px;
+    height: 18px;
+    top: -10px;
+    background-color: @color-secondary-input-background;
+    border: 15px solid @color-secondary-input-background;
+    border-radius: 50%;
+  }
 }
 
 .radio__item {
-  height: 48px;
+  height: 26px;
+  margin-top: 34px;
+
+  &:first-child {
+    margin-top: 37px;
+  }
+
+  &:last-child {
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 52px;
+  }
+}
+
+.radio__input {
+  display: none;
+
+  &:checked + .radio__title::before {
+    background-color: #333333;
+  }
+
+  &:checked + .radio__title:hover::before {
+    background-color: #333333;
+    border-color: @color-disable;
+  }
+
+  &:checked + .radio__title:active::before {
+    background-color: rgba(51, 51, 51, 0.3);
+    border-color: #d5d5d5;
+  }
 }

@@ -61,9 +61,9 @@
           </div>
 
           <section class="advantage">
-            <div class="advantage__wrapper">
+            <div class="advantage__wrapper advantage__wrapper--expanded">
               <h2 class="advantage__title advantage__title--large">Оставьте свой отзыв</h2>
-              <p class="advantage__text">Помогите нашим отелям стать лучше! <br class="br br-mobile">оставьте отзыв о них, <br class="br br-tablet br-desktop">а также о<br class="br br-mobile"> посещенных вами достопримечательностях</p>
+              <p class="advantage__text">Помогите нашим отелям стать лучше! <br class="br br-mobile">оставьте отзыв о них, <br class="br br-tablet br-desktop">а также о<br class="br br-mobile"> посещенных вами <br class="br br-mobile">достопримечательностях</p>
             </div>
           </section>
         </section>
@@ -109,15 +109,17 @@
           </div>
 
           <div class="feedback__field">
-            <h3 class="feedback__field-header">
-              Контактная информация:
-            </h3>
+            <div class="feedback__field-wrapper feedback__field-wrapper--border">
+              <h3 class="feedback__field-header feedback__field-header--border">
+                Контактная информация:
+              </h3>
+            </div>
 
             <div class="feedback__field-body">
               <div class="text-field">
                 <div class="text-field__wrapper">
                   <label class="text-field__title text-field__title--shifted" for="phone">
-                    Контактный телефон*:
+                    <span class="text-field__text text-field__text--not-for-desktop">Контактный</span> телефон*:
                   </label>
                   <div class="text-field__input-wrapper">
                     <input class="text-field__input text-field__input--mini" type="tel" name="phone" id="phone" placeholder="Введите телефон" pattern="([\+]*[7-8]{1}\s?[\(]*9[0-9]{2}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2})" required>
@@ -141,7 +143,7 @@
           </div>
 
           <div class="feedback__field">
-            <h3 class="feedback__field-header feedback__field-header--left">
+            <h3 class="feedback__field-header feedback__field-header--left-to-center">
               Ваше общее впечатление:
             </h3>
 
@@ -170,9 +172,11 @@
           </div>
 
           <div class="feedback__field">
-            <h3 class="feedback__field-header">
-              Посещенные <br class="feedback__br">достопримечательности:
-            </h3>
+            <div class="feedback__field-wrapper feedback__field-wrapper--border">
+              <h3 class="feedback__field-header">
+                Посещенные <br class="feedback__br">достопримечательности:
+              </h3>
+            </div>
 
             <div class="checkbox">
               <div class="checkbox__wrapper">
@@ -208,9 +212,11 @@
           </div>
 
           <div class="feedback__field">
-            <h3 class="feedback__field-header">
-              Опишите свои эмоции:
-            </h3>
+            <div class="feedback__field-wrapper feedback__field-wrapper--border">
+              <h3 class="feedback__field-header">
+                Опишите свои эмоции:
+              </h3>
+            </div>
             <div class="text-field">
               <div class="text-field__wrapper text-field__wrapper--center">
                 <textarea class="text-field__input text-field__input--large" name="review" id="review" placeholder="Опишите подробно все свои восторги"></textarea>
@@ -231,26 +237,22 @@
       </main>
 
       <section class="popup">
-        <section class="advantage">
-          <div class="advantage__wrapper">
-            <h2 class="advantage__title">Что-то пошло не так!</h2>
-            <p class="advantage__text">Проверьте поля, выделенные <br class="br br-mobile">красным, скорее всего вы <br class="br br-mobile">забыли их заполнить</p>
-          </div>
-        </section>
+        <div class="popup__wrapper">
+          <h2 class="popup__title">Что-то пошло <br class="br br-tablet br-desktop">не так!</h2>
+          <p class="popup__text">Проверьте поля, выделенные <br class="br br-mobile">красным, <br class="br br-tablet br-desktop">скорее всего вы <br class="br br-mobile">забыли их заполнить</p>
+        </div>
         <div class="popup__buttons">
-          <button class="button">Ок</button>
+          <button class="button button--medium">Ок</button>
         </div>
       </section>
 
       <section class="popup popup--large">
-        <section class="advantage">
-          <div class="advantage__wrapper">
-            <h2 class="advantage__title">Ваш отзыв отправлен</h2>
-            <p class="advantage__text">Спасибо за ваше участие, ваш <br class="br br-mobile">отзыв уже поступил к нам. <br class="br br-mobile">В ближайшее время мы <br class="br br-mobile">опубликуем его на сайте.</p>
-          </div>
-        </section>
-        <div class="popup__buttons popup__buttons--large ">
-          <button class="button">Закрыть окно</button>
+        <div class="popup__wrapper">
+          <h2 class="popup__title">Ваш отзыв отправлен!</h2>
+          <p class="popup__text">Спасибо за ваше участие, ваш <br class="br br-mobile">отзыв уже поступил к нам. <br class="br br-mobile br-tablet br-desktop">В ближайшее время мы <br class="br br-mobile">опубликуем его на сайте.</p>
+        </div>
+        <div class="popup__buttons popup__buttons--large">
+          <button class="button button--large">Закрыть окно</button>
         </div>
       </section>
 
@@ -263,13 +265,13 @@
           <div class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" target="black"></a>
+                <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" target="black"><span class="visually-hidden">Мы в Twitter</span></a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="black"></a>
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="black"><span class="visually-hidden">Мы в Facebook</span></a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS" target="black"></a>
+                <a class="social__link social__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS" target="black"><span class="visually-hidden">Мы на YouTube</span></a>
               </li>
             </ul>
           </div>
