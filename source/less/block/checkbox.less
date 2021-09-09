@@ -60,19 +60,13 @@
   &:checked + .checkbox__title::before {
     background: @color-secondary-input-background url("@{img-path}/tick.svg") no-repeat 50% 50%;
   }
+
   &:checked + .checkbox__title:hover::before {
     background-color: @color-disable;
   }
+
   &:checked + .checkbox__title:active::before {
     background-color: @color-disable;
     opacity: 0.45;
-  }
-  &:disabled + .checkbox__title,
-  &:disabled + .checkbox__title:hover,
-  &:disabled + .checkbox__title:active {
-    &::before {
-      background-color: #D5D5D5;
-      opacity: 0.1;
-    }
   }
 }
