@@ -26,6 +26,23 @@
     &--left {
       text-align: left;
     }
+
+    &--left-to-center {
+      text-align: left;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+
+    &--left {
+      text-align: left;
+    }
+
+    &--left-to-center {
+      text-align: left;
+      margin-left: 70px;
+    }
   }
 }
 
@@ -116,6 +133,16 @@
   }
 
   @media (min-width: @desktop-width) {
+    &:nth-child(1) {
+      width: 40%;
+      padding-left: 90px;
+    }
+
+    &:nth-child(3) {
+      width: 40%;
+      padding-right: 90px;
+    }
+
     &:nth-child(4) {
       width: 100%;
     }

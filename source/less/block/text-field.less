@@ -109,3 +109,13 @@
     display: block;
   }
 }
+
+.text-field__text {
+  display: inline-block;
+
+  &--not-for-desktop {
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+}
