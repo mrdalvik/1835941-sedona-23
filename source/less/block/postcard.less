@@ -28,6 +28,7 @@
 .postcard__photo {
   width: 320px;
   height: 260px;
+  background-size: contain;
 
   &--city {
     background-image: url("@{img-path}/photo-city.png");
@@ -35,6 +36,18 @@
 
   &--bridge {
     background-image: url("@{img-path}/photo-bridge.png");
+  }
+
+  @media
+  (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+    &--city {
+      background-image: url("@{img-path}/photo-city@2x.png");
+    }
+
+    &--bridge {
+      background-image: url("@{img-path}/photo-bridge@2x.png");
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -48,6 +61,18 @@
     &--bridge {
       background-image: url("@{img-path}/photo-bridge-tablet.png");
     }
+
+    @media
+    (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+      &--city {
+        background-image: url("@{img-path}/photo-city-tablet@2x.png");
+      }
+
+      &--bridge {
+        background-image: url("@{img-path}/photo-bridge-tablet@2x.png");
+      }
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -60,6 +85,18 @@
 
     &--bridge {
       background-image: url("@{img-path}/photo-bridge-desktop.png");
+    }
+
+    @media
+    (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+      &--city {
+        background-image: url("@{img-path}/photo-city-desktop@2x.png");
+      }
+
+      &--bridge {
+        background-image: url("@{img-path}/photo-bridge-desktop@2x.png");
+      }
     }
   }
 }
