@@ -3,14 +3,19 @@
   align-items: center;
   justify-content: center;
   background-image: url("@{img-path}/intro-triangle.svg"), url("@{img-path}/back-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
+  background-repeat: no-repeat, no-repeat;
+  background-position: top, center;
   width: 100%;
   height: 389px;
-  background-position-y: bottom;
+  background-position-y: bottom, center;
+  background-size: auto auto;
 
   &--small {
     height: 158px;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("@{img-path}/intro-triangle.svg"), url("@{img-path}/back-mobile@2x.jpg");
   }
 
   @media (min-width: @tablet-width) {
@@ -20,6 +25,10 @@
 
     &--small {
       height: 290px;
+    }
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("@{img-path}/intro-triangle.svg"), url("@{img-path}/back-desktop@2x.jpg");
     }
   }
 }
