@@ -7,18 +7,16 @@
 .player__video {
   width: 320px;
   height: 201px;
-  background: url("@{img-path}/video-mobile.jpg");
+  object-fit: contain;
 
   @media (min-width: @tablet-width) {
     width: 648px;
     height: 500px;
-    background: url("@{img-path}/video-desktop1.png");
   }
 
   @media (min-width: @desktop-width) {
     width: 800px;
     height: 500px;
-    background: url("@{img-path}/video-desktop.jpg");
   }
 }
 

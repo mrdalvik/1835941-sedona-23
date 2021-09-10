@@ -77,7 +77,13 @@
 
             <section class="post">
               <div class="post__wrapper">
-                <img class="post__photo post__photo--wide" src="img/photo-1-mobile.jpg">
+                <div class="post__photo post__photo--wide">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                    <img class="post__photo post__photo--wide" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Народные просторы">
+                  </picture>
+                </div>
                 <div class="post__info">
                   <div class="post__description">
                     <h3 class="post__title">Неродные просторы</h3>
@@ -93,7 +99,13 @@
 
             <section class="post">
               <div class="post__wrapper">
-                <img class="post__photo" src="img/photo-2-mobile.jpg">
+                <div class="post__photo">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                    <img class="post__photo" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Местная растительность">
+                  </picture>
+                </div>
                 <div class="post__info">
                   <div class="post__description">
                     <h3 class="post__title">Местная растительность</h3>
@@ -109,7 +121,13 @@
 
             <section class="post">
               <div class="post__wrapper">
-                <img class="post__photo" src="img/photo-3-mobile.jpg">
+                <div class="post__photo">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                    <img class="post__photo" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Дорога на север">
+                  </picture>
+                </div>
                 <div class="post__info">
                   <div class="post__description">
                     <h3 class="post__title">Дорога на север</h3>
@@ -125,7 +143,13 @@
 
             <section class="post">
               <div class="post__wrapper">
-                <img class="post__photo" src="img/photo-4-mobile.jpg">
+                <div class="post__photo">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                    <img class="post__photo" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Мост дьявола">
+                  </picture>
+                </div>
                 <div class="post__info">
                   <div class="post__description">
                     <h3 class="post__title">Мост дьявола</h3>
@@ -149,7 +173,13 @@
         </section>
 
         <section class="player">
-          <div class="player__video"></div>
+          <div class="player__video">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="player__video" src="img/video-desktop.jpg" srcset="img/video-desktop@2x.jpg 2x" alt="Видео о седоне">
+            </picture>
+          </div>
 
           <div class="player__controls">
             <div class="player__controls-wrapper">
