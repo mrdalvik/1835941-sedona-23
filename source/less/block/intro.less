@@ -12,6 +12,7 @@
 
   &--small {
     height: 158px;
+    background-position-y: bottom, bottom;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -24,7 +25,9 @@
     background-image: url("@{img-path}/intro-triangle.svg"), url("@{img-path}/back-desktop.jpg");
 
     &--small {
-      height: 290px;
+      position: relative;
+      top: 6px;
+      height: 300px;
     }
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -45,12 +48,14 @@
   }
 
   @media (min-width: @tablet-width) {
-    position: relative;
-    top: -5px;
     width: 460px;
     height: 350px;
+    position: relative;
+    top: -5px;
 
     &--small {
+      position: inherit;
+      top: 0;
       height: 290px;
       margin-bottom: 20px;
     }
