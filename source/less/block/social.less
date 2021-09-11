@@ -29,7 +29,9 @@
 
 .social__link {
   .base-link;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 48px;
   height: 48px;
   color: @color-white;
@@ -63,4 +65,12 @@
   &:active {
     background-color: @color-primary-active;
   }
+}
+
+.social__link:active .social__icon {
+  fill: @color-primary;
+}
+
+.social__icon {
+  fill: @color-white;
 }

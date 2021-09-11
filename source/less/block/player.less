@@ -70,7 +70,7 @@
 .player__dot {
   position: absolute;
   height: 13px;
-  width: 9px;
+  width: 13px;
   left: 25%;
   background-color: @color-white;
   border-radius: 50%;
@@ -136,33 +136,17 @@
   }
 }
 
+.player__button:hover .player__icon {
+  fill: #333333;
+}
+.player__button:active .player__icon {
+  fill: #c1c1c1;
+}
+
 .player__icon {
-  width: 32px;
-  height: 32px;
-  background-position: center;
-  background-repeat: no-repeat;
+  fill: #5c6870;
 
-  &--replay {
-    background-image: url("@{img-path}/replay.svg");
-
-    @media (min-width: @tablet-width) {
-      background-image: url("@{img-path}/replay-white.svg");
-    }
-  }
-
-  &--subtitles {
-    background-image: url("@{img-path}/subtitles.svg");
-
-    @media (min-width: @tablet-width) {
-      background-image: url("@{img-path}/subtitles-white.svg");
-    }
-  }
-
-  &--fullscreen {
-    background-image: url("@{img-path}/fullscreen.svg");
-
-    @media (min-width: @tablet-width) {
-      background-image: url("@{img-path}/fullscreen-white.svg");
-    }
+  @media (min-width: @tablet-width) {
+    fill: @color-white;
   }
 }
