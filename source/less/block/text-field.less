@@ -4,6 +4,10 @@
 
   &--phone {
     margin-bottom: -3px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -55,8 +59,12 @@
   display: flex;
   width: 100%;
 
-  @media (min-width: @desktop-width) {
-    &--email {
+  &--email {
+    @media (min-width: @tablet-width) {
+      margin-top: -3px;
+    }
+
+    @media (min-width: @desktop-width) {
       width: auto;
     }
   }
