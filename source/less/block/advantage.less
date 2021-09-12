@@ -151,6 +151,10 @@
   margin-top: 0;
   margin-bottom: 26px;
 
+  @media (min-width: @tablet-width) {
+    font-size: @font-size-tablet-big;
+  }
+
   &--primary {
     color: @color-white;
     margin-bottom: 12px;
@@ -163,51 +167,45 @@
   &--main {
     line-height: 26px;
     margin-bottom: 30px;
+
+    @media (min-width: @desktop-width) {
+      margin-top: 12px;
+      margin-bottom: 32px;
+    }
   }
 
   &--large {
     font-size: @font-size-mobile-big;
     margin-bottom: 21px;
+
+    @media (min-width: @tablet-width) {
+      font-size: @font-size-large;
+      margin-bottom: 36px;
+    }
   }
 
   &--gallery {
     font-size: 18px;
     margin-bottom: 26px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 30px;
+      margin-bottom: 33px;
+    }
   }
 
   &--doubts {
     font-size: 18px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 30px;
+      margin-bottom: 33px;
+    }
   }
 
   &--review {
     font-size: 18px;
     margin-bottom: 28px;
-  }
-
-  @media (min-width: @tablet-width) {
-    font-size: @font-size-tablet-big;
-
-    &--large {
-      font-size: @font-size-large;
-      margin-bottom: 36px;
-    }
-
-    &--gallery {
-      font-size: 30px;
-      margin-bottom: 33px;
-    }
-
-    &--doubts {
-      font-size: 30px;
-      margin-bottom: 33px;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    &--main {
-      margin-top: 12px;
-      margin-bottom: 32px;
-    }
   }
 }
 
