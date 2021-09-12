@@ -30,6 +30,18 @@
     justify-content: center;
   }
 
+  &--phone {
+    @media (min-width: @desktop-width) {
+      margin-top: 9px;
+    }
+  }
+
+  &--email {
+    @media (min-width: @desktop-width) {
+      margin-top: 9px;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     margin-left: 0;
     margin-right: 0;
@@ -54,8 +66,13 @@
     margin-top: 10px;
   }
 
-  &--shifted {
+  &--phone {
+    margin-left: 0;
+  }
+
+  &--email {
     margin-left: 21px;
+    margin-right: 20px;
   }
 
   &--middlename {
