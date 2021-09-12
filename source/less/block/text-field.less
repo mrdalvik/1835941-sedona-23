@@ -67,7 +67,11 @@
   }
 
   &--phone {
-    margin-left: 0;
+    margin-left: 21px;
+
+    @media (min-width: @desktop-width) {
+      margin-left: 0;
+    }
   }
 
   &--email {
