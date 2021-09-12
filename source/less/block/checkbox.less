@@ -80,4 +80,13 @@
     background-color: @color-disable;
     opacity: 0.45;
   }
+
+  &:not(:checked) + .checkbox__title:hover::before {
+    background-color: @color-disable;
+  }
+
+  &:not(:checked) + .checkbox__title:active::before {
+    background-color: @color-disable;
+    opacity: 0.45;
+  }
 }

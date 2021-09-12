@@ -75,4 +75,14 @@
     background-color: rgba(51, 51, 51, 0.3);
     border-color: #d5d5d5;
   }
+
+  &:not(:checked) + .radio__title:hover::before {
+    background-color: @color-disable;
+    border-color: @color-disable;
+  }
+
+  &:not(:checked) + .radio__title:active::before {
+    background-color: #d5d5d5;
+    border-color: #d5d5d5;
+  }
 }
