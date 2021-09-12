@@ -19,6 +19,11 @@
   line-height: @line-height;
   text-align: center;
   margin-top: 0;
+  margin-bottom: 16px;
+
+  &--introduse {
+    margin-bottom: 19px;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
@@ -32,14 +37,14 @@
       text-align: left;
     }
 
-    &--left-to-center {
+    &--impressions {
       text-align: left;
       background-color: transparent;
     }
   }
 
   @media (min-width: @desktop-width) {
-    &--left-to-center {
+    &--impressions {
       margin-left: 74px;
     }
 
@@ -107,15 +112,30 @@
 .feedback__field {
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 5px;
   border-top: 1px solid @color-disable;
+
+  &:nth-child(2) {
+    padding-bottom: 7px;
+  }
+
+  &:nth-child(3) {
+    padding-bottom: 20px;
+  }
+
+  &:nth-child(4) {
+    padding-top: 15px;
+    padding-bottom: 17px;
+  }
 
   &:nth-child(6) {
     border-top: none;
+    padding-top: 26px;
   }
 
   &:last-child {
     border-top: none;
+    padding-bottom: 14px;
   }
 
   @media (max-width: @mobile-width-only) {

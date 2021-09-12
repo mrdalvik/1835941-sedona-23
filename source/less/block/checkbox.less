@@ -19,20 +19,20 @@
 
 .checkbox__title {
   font-weight: 700;
-  font-size: @font-size-mobile-big;
+  font-size: 18px;
   line-height: @line-height;
   text-align: center;
   text-transform: initial;
-  padding-left: 29px;
+  padding-left: 23px;
 
   &::before {
     content: "";
     position: relative;
     display: block;
     float: left;
-    width: 46px;
-    height: 46px;
-    top: -10px;
+    width: 56px;
+    height: 56px;
+    top: -15px;
     background-color: #f2f2f2;
     border: none;
     border-radius: 5px;
@@ -41,8 +41,14 @@
 
 .checkbox__item {
   height: 48px;
-  margin-top: 34px;
+  margin-top: 32px;
   user-select: none;
+
+  &:first-child {
+    @media (max-width: @mobile-width-only) {
+      margin-top: 36px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     width: 50%;

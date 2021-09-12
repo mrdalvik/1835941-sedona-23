@@ -1,6 +1,10 @@
 .text-field {
   display: flex;
   margin-bottom: 6px;
+
+  &--phone {
+    margin-bottom: -3px;
+  }
 }
 
 .text-field--inline {
@@ -35,11 +39,15 @@
 
 .text-field__title {
   display: block;
-  margin-right: 20px;
-  margin-bottom: 8px;
+  margin-right: 14px;
+  margin-bottom: 9px;
 
   &--shifted {
     margin-left: 21px;
+  }
+
+  &--middlename {
+    margin-right: 17px;
   }
 }
 
@@ -59,9 +67,8 @@
   height: 58px;
   margin: 0;
   padding: 0 20px;
-  padding-right: 20px;
   font-weight: 700;
-  font-size: @font-size-mobile-big;
+  font-size: 18px;
   line-height: @line-height;
   color: @color-black;
   text-transform: none;
@@ -79,8 +86,8 @@
   }
 
   &--large {
-    height: 160px;
-    padding-top: 18px;
+    height: 147px;
+    padding-top: 12px;
     resize: none;
   }
 
