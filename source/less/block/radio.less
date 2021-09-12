@@ -22,6 +22,10 @@
     border: 15px solid @color-secondary-input-background;
     border-radius: 50%;
   }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .radio__item {
@@ -38,6 +42,10 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 52px;
+
+    &:first-child {
+      margin-top: 71px;
+    }
   }
 }
 

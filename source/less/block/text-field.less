@@ -46,6 +46,12 @@
 .text-field__input-wrapper {
   display: flex;
   width: 100%;
+
+  @media (min-width: @desktop-width) {
+    &--email {
+      width: auto;
+    }
+  }
 }
 
 .text-field__input {
@@ -82,11 +88,13 @@
     &--large {
       margin-top: 33px;
       width: 100%;
-      height: 160px;
+      height: 142px;
     }
   }
 
   @media (min-width: @desktop-width) {
+    font-size: 18px;
+
     &--mini {
       width: 217px;
     }

@@ -29,7 +29,7 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
 
-          <div class="main-nav__wrapper">
+          <div class="main-nav__wrapper main-nav__wrapper--small">
             <ul class="main-nav__list" id="main-nav-menu">
               <li class="main-nav__item">
                 <a class="main-nav__link" href="index.html">
@@ -70,8 +70,8 @@
             <img class="intro__tagline intro__tagline--small" src="img/text-photo-video.svg">
           </div>
 
-          <section class="advantage">
-            <div class="advantage__wrapper advantage__wrapper--expanded">
+          <section class="advantage advantage--review">
+            <div class="advantage__wrapper advantage__wrapper--review">
               <h2 class="advantage__title advantage__title--large">Оставьте свой отзыв</h2>
               <p class="advantage__text">Помогите нашим отелям стать лучше! <br class="br br-mobile">оставьте отзыв о них, <br class="br br-tablet br-desktop">а также о<br class="br br-mobile"> посещенных вами <br class="br br-mobile">достопримечательностях</p>
             </div>
@@ -80,7 +80,7 @@
 
         <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
           <div class="feedback__field">
-            <h3 class="feedback__field-header feedback__field-header--left">
+            <h3 class="feedback__field-header feedback__field-header--introduse">
               Представьтесь:
             </h3>
 
@@ -119,7 +119,7 @@
           </div>
 
           <div class="feedback__field">
-            <div class="feedback__field-wrapper feedback__field-wrapper--border">
+            <div class="feedback__field-wrapper feedback__field-wrapper--contacts">
               <h3 class="feedback__field-header feedback__field-header--border">
                 Контактная информация:
               </h3>
@@ -143,7 +143,7 @@
                   <label class="text-field__title text-field__title--shifted" for="email">
                     Электронная почта*:
                   </label>
-                  <div class="text-field__input-wrapper">
+                  <div class="text-field__input-wrapper text-field__input-wrapper--email">
                     <input class="text-field__input text-field__input--mini" type="email" name="email" id="email" placeholder="Введите e-mail" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required>
                     <img class="text-field__icon" src="img/mail.svg">
                   </div>
@@ -183,7 +183,7 @@
 
           <div class="feedback__field">
             <div class="feedback__field-wrapper feedback__field-wrapper--border">
-              <h3 class="feedback__field-header">
+              <h3 class="feedback__field-header feedback__field-header--border">
                 Посещенные <br class="feedback__br">достопримечательности:
               </h3>
             </div>
@@ -223,7 +223,7 @@
 
           <div class="feedback__field">
             <div class="feedback__field-wrapper feedback__field-wrapper--border">
-              <h3 class="feedback__field-header">
+              <h3 class="feedback__field-header feedback__field-header--border">
                 Опишите свои эмоции:
               </h3>
             </div>
@@ -246,7 +246,7 @@
         </form>
       </main>
 
-      <section class="popup">
+      <section class="popup" style="display: none;">
         <div class="popup__wrapper">
           <h2 class="popup__title">Что-то пошло <br class="br br-tablet br-desktop">не так!</h2>
           <p class="popup__text">Проверьте поля, выделенные <br class="br br-mobile">красным, <br class="br br-tablet br-desktop">скорее всего вы <br class="br br-mobile">забыли их заполнить</p>
@@ -256,7 +256,7 @@
         </div>
       </section>
 
-      <section class="popup popup--large">
+      <section class="popup popup--large" style="display: none;">
         <div class="popup__wrapper">
           <h2 class="popup__title">Ваш отзыв отправлен!</h2>
           <p class="popup__text">Спасибо за ваше участие, ваш <br class="br br-mobile">отзыв уже поступил к нам. <br class="br br-mobile br-tablet br-desktop">В ближайшее время мы <br class="br br-mobile">опубликуем его на сайте.</p>
