@@ -40,7 +40,9 @@
   height: 56px;
 
   &--small {
-    height: 50px;
+    @media (min-width: @tablet-width) {
+      height: 50px;
+    }
   }
 }
 

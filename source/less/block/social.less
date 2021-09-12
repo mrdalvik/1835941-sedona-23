@@ -11,13 +11,16 @@
 }
 
 .social__list {
-  position: relative;
-  left: -5px;
   display: flex;
   justify-content: center;
   width: 100%;
   margin: 0;
   padding-left: 0;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    left: -5px;
+  }
 }
 
 .social__item {
