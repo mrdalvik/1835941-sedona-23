@@ -2,6 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 0;
+  margin-bottom: -4px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 19px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 54px;
+  }
 }
 
 .player__video {
@@ -31,11 +42,11 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  top: -45px;
+  top: -44px;
   left: 0;
   width: 280px;
   min-height: 45px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 
   @media (min-width: @tablet-width) {
     width: 648px;
@@ -59,7 +70,7 @@
 
   @media (min-width: @tablet-width) {
     width: 389px;
-    margin-left: -90px;
+    margin-left: -77px;
   }
 
   @media (min-width: @desktop-width) {
@@ -69,19 +80,28 @@
 
 .player__dot {
   position: absolute;
-  height: 13px;
+  height: 9px;
   width: 9px;
-  left: 25%;
-  background-color: @color-white;
+  left: 21%;
+  padding: 0;
   border-radius: 50%;
+  background-color: @color-white;
   border: none;
   outline: none;
   cursor: pointer;
   z-index: 50;
+
+  @media (min-width: @tablet-width) {
+    left: 32%;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 25.7%;
+  }
 }
 
 .player__buttons {
-  top: -45px;
+  top: -44px;
   position: relative;
   display: flex;
   align-items: center;
@@ -115,6 +135,7 @@
     margin-left: 15px;
 
     @media (min-width: @tablet-width) {
+      margin-left: 25px;
       margin-right: 35px;
     }
   }
@@ -136,33 +157,18 @@
   }
 }
 
+.player__button:hover .player__icon {
+  fill: #333333;
+}
+
+.player__button:active .player__icon {
+  fill: #c1c1c1;
+}
+
 .player__icon {
-  width: 32px;
-  height: 32px;
-  background-position: center;
-  background-repeat: no-repeat;
+  fill: #5c6870;
 
-  &--replay {
-    background-image: url("@{img-path}/replay.svg");
-
-    @media (min-width: @tablet-width) {
-      background-image: url("@{img-path}/replay-white.svg");
-    }
-  }
-
-  &--subtitles {
-    background-image: url("@{img-path}/subtitles.svg");
-
-    @media (min-width: @tablet-width) {
-      background-image: url("@{img-path}/subtitles-white.svg");
-    }
-  }
-
-  &--fullscreen {
-    background-image: url("@{img-path}/fullscreen.svg");
-
-    @media (min-width: @tablet-width) {
-      background-image: url("@{img-path}/fullscreen-white.svg");
-    }
+  @media (min-width: @tablet-width) {
+    fill: @color-white;
   }
 }

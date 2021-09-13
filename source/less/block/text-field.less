@@ -1,6 +1,14 @@
 .text-field {
   display: flex;
   margin-bottom: 6px;
+
+  &--phone {
+    margin-bottom: -3px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .text-field--inline {
@@ -22,6 +30,18 @@
     justify-content: center;
   }
 
+  &--phone {
+    @media (min-width: @desktop-width) {
+      margin-top: 9px;
+    }
+  }
+
+  &--email {
+    @media (min-width: @desktop-width) {
+      margin-top: 9px;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     margin-left: 0;
     margin-right: 0;
@@ -35,17 +55,58 @@
 
 .text-field__title {
   display: block;
-  margin-right: 20px;
-  margin-bottom: 8px;
+  margin-right: 14px;
+  margin-bottom: 9px;
 
-  &--shifted {
+  @media (min-width: @tablet-width) {
+    margin-right: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 10px;
+  }
+
+  &--phone {
     margin-left: 21px;
+
+    @media (min-width: @desktop-width) {
+      margin-left: 0;
+    }
+  }
+
+  &--email {
+    margin-left: 21px;
+    margin-right: 20px;
+  }
+
+  &--middlename {
+    margin-right: 17px;
+
+    @media (min-width: @tablet-width) {
+      margin-right: 20px;
+    }
   }
 }
 
 .text-field__input-wrapper {
   display: flex;
   width: 100%;
+
+  &--email {
+    @media (min-width: @tablet-width) {
+      margin-top: -3px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: auto;
+    }
+  }
+
+  &--firstname {
+    @media (min-width: @desktop-width) {
+      margin-top: -6px;
+    }
+  }
 }
 
 .text-field__input {
@@ -53,9 +114,8 @@
   height: 58px;
   margin: 0;
   padding: 0 20px;
-  padding-right: 20px;
   font-weight: 700;
-  font-size: @font-size-mobile-big;
+  font-size: 18px;
   line-height: @line-height;
   color: @color-black;
   text-transform: none;
@@ -73,20 +133,23 @@
   }
 
   &--large {
-    height: 160px;
-    padding-top: 18px;
+    height: 147px;
+    padding-top: 12px;
     resize: none;
   }
 
   @media (min-width: @tablet-width) {
     &--large {
-      margin-top: 33px;
+      margin-top: 38px;
+      padding-top: 18px;
       width: 100%;
-      height: 160px;
+      height: 142px;
     }
   }
 
   @media (min-width: @desktop-width) {
+    font-size: 18px;
+
     &--mini {
       width: 217px;
     }
@@ -107,6 +170,8 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+    margin-top: 19px;
+    margin-bottom: 0;
   }
 }
 

@@ -3,9 +3,34 @@
   flex-direction: column;
   align-items: center;
 
-  @media (min-width: @tablet-width) {
-    &--primary {
+  &--gallery {
+    padding-bottom: 13px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 19px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-bottom: 23px;
+    }
+  }
+
+  &--primary {
+    @media (min-width: @tablet-width) {
       width: 100%;
+    }
+  }
+
+  &--doubts {
+    @media (min-width: @tablet-width) {
+      padding-bottom: 13px;
+    }
+  }
+
+  &--review {
+    @media (min-width: @tablet-width) {
+      padding-top: 5px;
+      padding-bottom: 39px;
     }
   }
 }
@@ -21,31 +46,37 @@
 
   @media (min-width: @tablet-width) {
     border-bottom: none;
-  }
-
-  @media (min-width: @tablet-width) {
     width: 33%;
   }
 }
 
 .advantage__wrapper {
   padding-top: 32px;
-  padding-bottom: 27px;
+  padding-bottom: 40px;
   padding-left: 17px;
   padding-right: 18px;
 
   &--primary {
     padding-top: 39px;
-    padding-bottom: 39px;
+    padding-bottom: 34px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 33px;
+    }
   }
 
   &--secondary {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 22px;
+    padding-bottom: 23px;
 
     @media (min-width: @tablet-width) {
-      padding-top: 42px;
-      padding-bottom: 42px;
+      padding-top: 40px;
+      padding-bottom: 41px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 38px;
+      padding-bottom: 62px;
     }
   }
 
@@ -53,20 +84,27 @@
     padding-bottom: 20px;
 
     @media (min-width: @tablet-width) {
-      padding-top: 65px;
-      padding-bottom: 65px;
+      padding-top: 59px;
+      padding-bottom: 58px;
     }
 
     @media (min-width: @desktop-width) {
-      padding-top: 67px;
+      padding-top: 95px;
     }
   }
 
   &--main {
-    padding-bottom: 52px;
+    padding-top: 33px;
+    padding-bottom: 15px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 43px;
+      padding-bottom: 55px;
+    }
 
     @media (min-width: @desktop-width) {
       padding-top: 43px;
+      padding-bottom: 41px;
     }
   }
 
@@ -82,18 +120,52 @@
     }
   }
 
-  &--expanded {
+  &--review {
     padding-top: 36px;
-    padding-bottom: 16px;
+    padding-bottom: 17px;
 
     @media (min-width: @tablet-width) {
-      padding-top: 64px;
-      padding-bottom: 73px;
+      padding-top: 53px;
+      padding-bottom: 48px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 290px;
+        top: 606px;
+        left: 50%;
+        background-color: #dbdbdb;
+      }
     }
 
     @media (min-width: @desktop-width) {
-      padding-top: 114px;
-      padding-bottom: 56px;
+      padding-top: 103px;
+      padding-bottom: 20px;
+
+      &::before {
+        height: 295px;
+        top: 636px;
+      }
+    }
+  }
+
+  &--interesting {
+    padding-top: 28px;
+    padding-bottom: 30px;
+  }
+
+  &--doubts {
+    padding-bottom: 35px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 58px;
+      padding-bottom: 48px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 61px;
+      padding-bottom: 45px;
     }
   }
 }
@@ -104,6 +176,10 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: @font-size-tablet-big;
+  }
 
   &--primary {
     color: @color-white;
@@ -116,23 +192,50 @@
 
   &--main {
     line-height: 26px;
+    margin-bottom: 30px;
+
+    @media (min-width: @desktop-width) {
+      margin-top: 12px;
+      margin-bottom: 32px;
+    }
   }
 
-  @media (min-width: @tablet-width) {
-    font-size: @font-size-tablet-big;
+  &--large {
+    font-size: @font-size-mobile-big;
+    margin-bottom: 21px;
 
-    &--main {
-      margin-top: 11px;
-    }
-
-    &--large {
+    @media (min-width: @tablet-width) {
       font-size: @font-size-large;
+      margin-bottom: 36px;
     }
   }
 
-  @media (min-width: @desktop-width) {
-    &--main {
-      margin-top: 11px;
+  &--gallery {
+    font-size: 18px;
+    margin-bottom: 26px;
+
+    @media (min-width: @tablet-width) {
+      font-size: @font-size-large;
+      margin-bottom: 33px;
+    }
+  }
+
+  &--doubts {
+    font-size: 18px;
+
+    @media (min-width: @tablet-width) {
+      font-size: @font-size-large;
+      margin-bottom: 33px;
+    }
+  }
+
+  &--review {
+    font-size: 18px;
+    margin-bottom: 28px;
+
+    @media (min-width: @tablet-width) {
+      font-size: @font-size-large;
+      margin-bottom: 33px;
     }
   }
 }
@@ -144,6 +247,19 @@
 
   &--primary {
     color: @color-white;
+  }
+
+  &--secondary {
+    margin-top: -3px;
+    margin-bottom: 12px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 17px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 19px;
+    }
   }
 }
 
