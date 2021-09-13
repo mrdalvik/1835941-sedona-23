@@ -8,11 +8,12 @@
   width: 100%;
   height: 389px;
   background-position-y: bottom, center;
-  background-size: auto auto;
+  background-size: auto, contain;
 
   &--small {
     height: 158px;
     background-position-y: bottom, bottom;
+    background-size: auto, auto;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -23,11 +24,13 @@
     width: 100%;
     height: 518px;
     background-image: url("@{img-path}/intro-triangle.svg"), url("@{img-path}/back-desktop.jpg");
+    background-size: auto, cover;
 
     &--small {
       position: relative;
       top: -4px;
       height: 300px;
+      background-size: auto, auto;
     }
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -36,6 +39,8 @@
   }
 
   @media (min-width: @desktop-width) {
+    background-size: auto, cover;
+
     &--small {
       height: 311px;
     }
