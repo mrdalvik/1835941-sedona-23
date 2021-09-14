@@ -19,6 +19,14 @@
     background-size: 22.9px 22px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+
+    &:hover {
+      background-image: url("@{img-path}/icon-menu-hover.svg");
+    }
+
+    &:active {
+      background-image: url("@{img-path}/icon-menu-down.svg");
+    }
   }
 
   &--open {
@@ -26,6 +34,14 @@
     background-size: 22px 22px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+
+    &:hover {
+      background-image: url("@{img-path}/icon-cross-hover.svg");
+    }
+
+    &:active {
+      background-image: url("@{img-path}/icon-cross-down.svg");
+    }
   }
 
   &--nojs {
@@ -119,6 +135,10 @@
   :disabled {
     color: @color-white;
     background-color: @color-disable;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    font-size: 18px;
   }
 
   @media (min-width: @tablet-width) {
