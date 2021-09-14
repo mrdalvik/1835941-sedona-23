@@ -56,4 +56,6 @@ class PageNavigator
   }
 }
 
-export const pageNavigator = new PageNavigator();
+new PageNavigator().init({
+  isOpen: false
+});
