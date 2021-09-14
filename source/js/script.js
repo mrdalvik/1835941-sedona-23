@@ -59,3 +59,16 @@ class PageNavigator
 new PageNavigator().init({
   isOpen: false
 });
+
+function showMap()
+{
+  const map = document.getElementById("location-map");
+  if (!map instanceof HTMLElement)
+  {
+    throw Error("Can't find map node");
+  }
+
+  map.classList.remove("location__map--nojs");
+}
+
+showMap();
