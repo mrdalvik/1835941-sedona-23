@@ -91,6 +91,10 @@
   cursor: pointer;
   z-index: 50;
 
+  &:focus {
+    background-color: @color-primary;
+  }
+
   @media (min-width: @tablet-width) {
     left: 32%;
   }
@@ -158,6 +162,10 @@
 }
 
 .player__button:hover .player__icon {
+  fill: #333333;
+}
+
+.player__button:focus .player__icon {
   fill: #333333;
 }
 
