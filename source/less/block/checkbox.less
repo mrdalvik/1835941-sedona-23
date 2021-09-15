@@ -66,27 +66,40 @@
 }
 
 .checkbox__input {
-  display: none;
+  .visually-hidden;
 
-  &:checked + .checkbox__title::before {
+  &:checked:not([disabled]) + .checkbox__title::before {
     background: @color-secondary-input-background url("@{img-path}/tick.svg") no-repeat 50% 50%;
   }
 
-  &:checked + .checkbox__title:hover::before {
+  &:checked:not([disabled]) + .checkbox__title:hover::before {
     background-color: @color-disable;
   }
 
-  &:checked + .checkbox__title:active::before {
+  &:checked:not([disabled]) + .checkbox__title:active::before {
     background-color: @color-disable;
     opacity: 0.45;
   }
 
-  &:not(:checked) + .checkbox__title:hover::before {
+  &:not(:checked):not([disabled]) + .checkbox__title:hover::before {
     background-color: @color-disable;
   }
 
-  &:not(:checked) + .checkbox__title:active::before {
+  &:not(:checked):not([disabled]) + .checkbox__title:active::before {
     background-color: @color-disable;
     opacity: 0.45;
+  }
+
+  &:disabled + .checkbox__title::before {
+    background-color: @color-inactive;
+    border-color: @color-inactive;
+  }
+
+  &:focus + .checkbox__title::before {
+    background-color: @color-disable;
+  }
+
+  &:checked:focus + .checkbox__title::before {
+    background-color: @color-disable;
   }
 }
