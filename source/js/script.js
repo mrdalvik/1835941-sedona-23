@@ -63,9 +63,9 @@ new PageNavigator().init({
 function showMap()
 {
   const map = document.getElementById("location-map");
-  if (!map instanceof HTMLElement)
+  if (!map)
   {
-    throw Error("Can't find map node");
+    return;
   }
 
   map.classList.remove("location__map--nojs");

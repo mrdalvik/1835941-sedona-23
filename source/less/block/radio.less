@@ -62,27 +62,32 @@
 .radio__input {
   display: none;
 
-  &:checked + .radio__title::before {
+  &:checked:not([disabled]) + .radio__title::before {
     background-color: #333333;
   }
 
-  &:checked + .radio__title:hover::before {
+  &:checked:not([disabled]) + .radio__title:hover::before {
     background-color: #333333;
     border-color: @color-disable;
   }
 
-  &:checked + .radio__title:active::before {
+  &:checked:not([disabled]) + .radio__title:active::before {
     background-color: rgba(51, 51, 51, 0.3);
     border-color: #d5d5d5;
   }
 
-  &:not(:checked) + .radio__title:hover::before {
+  &:not(:checked):not([disabled]) + .radio__title:hover::before {
     background-color: @color-disable;
     border-color: @color-disable;
   }
 
-  &:not(:checked) + .radio__title:active::before {
+  &:not(:checked):not([disabled]) + .radio__title:active::before {
     background-color: #d5d5d5;
     border-color: #d5d5d5;
+  }
+
+  &:disabled + .radio__title::before {
+    background-color: @color-inactive;
+    border-color: @color-inactive;
   }
 }
